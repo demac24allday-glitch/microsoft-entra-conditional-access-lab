@@ -38,6 +38,48 @@ Two test identities were created:
 5. Verified Caleb's registered authentication method.
 6. Investigated Conditional Access availability and identified an Entra licensing limitation.
 
+## Lab Evidence and Screenshots
+
+### 1. Test Users
+Created Caleb Martin and Riley Adams as simulated identities.
+
+![Test Users](screenshots/01-ca-test-users.png)
+
+### 2. Finance Security Group
+Assigned Caleb Martin to CA-Finance-Users.
+
+![Finance Group](screenshots/02-ca-finance-group.png)
+
+### 3. Privileged Test Group
+Assigned Riley Adams to CA-Privileged-Admins.
+
+![Privileged Group](screenshots/03-ca-privileged-group.png)
+
+### 4. Available Authentication Methods
+Reviewed authentication methods enabled in the Microsoft Entra tenant.
+
+![Authentication Methods](screenshots/04-authentication-methods.png)
+
+### 5. Caleb Before MFA Registration
+Verified that Caleb initially had no registered authentication methods.
+
+![Before MFA](screenshots/05-caleb-no-auth-methods.png)
+
+### 6. Riley Before MFA Registration
+Reviewed Riley's authentication methods before configuration.
+
+![Riley Authentication Methods](screenshots/06-riley-no-auth-methods.png)
+
+### 7. Caleb After MFA Registration
+Successfully registered Microsoft Authenticator and verified it appeared as a usable authentication method.
+
+![Authenticator Registered](screenshots/07-caleb-authenticator-registered.png)
+
+### 8. Conditional Access Licensing Limitation
+Confirmed that Conditional Access policy creation was unavailable with the tenant's current Entra Free license.
+
+![Licensing Limitation](screenshots/08-conditional-access-license-limitation.png)
+
 ## Conditional Access Designs
 
 Two policies were documented:
